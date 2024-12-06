@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-spacing: -0.15px;
+}
+
+.main-container{
+    font-family: "Outfit", serif;
+    letter-spacing: 0.031rem;
+    width: 75%;
+    max-width: 100%;
+    background-color: #121826;
+    color:#fefefe;
+    margin: 4rem auto;
+    padding: 2rem;
+    border-radius: 0.85rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.5rem;
+}
+
+.top-container{
+    width: 75%;
+    max-width: 100%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.5rem;
+}
+
+.pricing{
+    width: fit-content;
+    height: auto;
+}
+
+.pricing p{
+    font-size: 0.95rem;
+    font-weight:800;
+    color: #626BE9;
+}
+
+.hero-main-text{
+    width: fit-content;
+    height: auto;
+}
+
+.hero-main-text h1{
+    font-size: 2.5rem;
+    color: #fefefe;
+}
+
+.byline{
+    width: 50%;
+    height: auto;
+}
+
+.byline p{
+    font-size: 1rem;
+    font-weight: 200;
+    color:#ccc;
+    text-align: center;
+}
+
+.billing-plans{
+    display: inline-flex;
+    background-color: #333;
+    border-radius: 1rem; /* 8px equivalent */
+    overflow: hidden;
+    padding: 0.25rem;
+}
+
+.billing-plans button{
+    padding: 0.5rem 1rem; /* 8px 16px equivalent */
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 0.85rem; /* 16px equivalent */
+    transition: background-color 0.3s;
+}
+
+.monthly button{
+    background-color:#626BE9; /* Green for active button */
+    border-radius: 1rem;
+}
+
+.toggle-button:not(.active):hover {
+    background-color: #555; /* Slightly lighter grey for hover */
+}
+
+.plan-details{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    column-gap: 1.5rem;
+}
+
+.freelancer-plan, .enterprise-plan{
+    width: 30%;
+    height: 52vh;
+    background-color: #121826;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+    border: 0.1rem solid grey;
+    border-radius: 1rem;
+}
+
+.freelancer-plan p, .enterprise-plan p{
+    margin-top: 0.5rem;
+    font-weight: 200;
+    font-size: 0.95rem;
+    color: #fefefe;
+}
+
+.buy-button {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    padding: 12px 120px;
+    color: white;
+    background-color: #444;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+.buy-button:hover {
+    background-color: #666;
+}
+
+.startup-plan{
+    width: 30%;
+    height: 52vh;
+    background-color: #1E2431;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+    border: 0.15rem solid #626BE9;
+    border-radius: 1rem;
+}
+
+.startup-plan p{
+    margin-top: 0.5rem;
+    font-weight: 200;
+    font-size: 0.95rem;
+    color: #fefefe;
+}
+
+.top{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.top button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    border: none;
+}
+
+.startup-plan button{
+    padding: 4px 4px;
+    background-color:#626BE9;
+    color:#fefefe;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.buy-button-startup {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    padding: 12px 120px;
+    color: white;
+    background-color: #626BE9;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+.buy-button-startup:hover {
+    background-color: #666;
+}
+
+.price-section{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    column-gap: 0.25rem;
+}
+
+.price {
+    font-size: 2.5rem; /* Larger font size for the price */
+    font-weight: bold;
+}
+
+.per-month {
+    font-size: 1rem; /* Smaller font size for the per-month text */
+    margin-bottom: 0.25rem; /* Adjust as needed for fine-tuning vertical alignment */
+}
+
+.freelancer-plan ul {
+    list-style: none;
+    padding: 0;
+}
+.freelancer-plan ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+}
+.freelancer-plan ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #fefefe;
+}
+
+.startup-plan ul {
+    list-style: none;
+    padding: 0;
+}
+.startup-plan ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+}
+.startup-plan ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #fefefe;
+}
+
+.enterprise-plan ul {
+    list-style: none;
+    padding: 0;
+}
+.enterprise-plan ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+}
+.enterprise-plan ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #fefefe;
+}
